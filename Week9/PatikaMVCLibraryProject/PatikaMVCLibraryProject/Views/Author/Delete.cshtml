@@ -1,0 +1,43 @@
+﻿@model Author
+
+<div class="card mb-3">
+    <h5 class="card-header">Delete Author</h5>
+    <div class="card-body">
+        <p><strong>Name Surname:</strong> @Model.FirstName @Model.LastName</p>
+        <p><strong>Date Of Birth:</strong> @Model.DateOfBirth.ToShortDateString()</p>
+    </div>
+</div>
+
+@{
+    if (ViewBag.error == null)
+    {
+        <form method="post" action="@Url.Action("DeleteConfirmed", "Author", new { id = Model.Id })">
+            <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+            <a href="@Url.Action("List", "Author")" class="btn btn-secondary"><i class="bi bi-x-circle"></i></a>
+        </form>
+    }
+    else
+    {
+        <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalChoice">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-3 shadow">
+                    <div class="modal-header d-flex">
+                        <div class="p-1 w-100">
+                            <h5 class="modal-title text-danger">
+                                Unable to Delete Author
+                            </h5>
+                        </div>
+                        <div class="p-1 flex-shrink-1">
+                            <a href="@Url.Action("List", "Author")" class="btn btn-danger"><i class="bi bi-x-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal-body p-4 text-danger">
+                        <p>@ViewBag.error</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+} 
+
+

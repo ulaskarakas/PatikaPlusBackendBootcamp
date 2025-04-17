@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Customer Information";
+}
+
+<div class="card bg-light">
+    <div class="card-header"><h1>Customer Information</h1></div>
+    <div class="card-body">
+        <p><strong>ID:</strong> @Model.Customer.Id</p>
+        <p><strong>Name:</strong> @Model.Customer.FirstName</p>
+        <p><strong>Surname:</strong> @Model.Customer.LastName</p>
+        <p><strong>E-mail:</strong> @Model.Customer.Email</p>
+
+        <h4>Orders</h4>
+        <table class="table table-striped">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Orders)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.ProductName</td>
+                        <td>@order.Price.ToString("C", new System.Globalization.CultureInfo("en-US"))</td>
+                        <td>@order.Quantity</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+

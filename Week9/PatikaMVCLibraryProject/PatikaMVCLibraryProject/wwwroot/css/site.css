@@ -1,0 +1,48 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background: url('/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    font-weight: bold;
+}
+
+.content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.hover-text-primary:hover a {
+    color: var(--bs-primary) !important;
+}
+
+label {
+    font-weight: 500;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+}

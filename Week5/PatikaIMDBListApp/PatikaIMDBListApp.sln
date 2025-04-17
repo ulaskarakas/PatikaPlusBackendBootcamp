@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatikaIMDBListApp", "PatikaIMDBListApp\PatikaIMDBListApp.csproj", "{740AEDA7-55EE-4784-87CA-9B902BB22773}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{740AEDA7-55EE-4784-87CA-9B902BB22773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740AEDA7-55EE-4784-87CA-9B902BB22773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740AEDA7-55EE-4784-87CA-9B902BB22773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740AEDA7-55EE-4784-87CA-9B902BB22773}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

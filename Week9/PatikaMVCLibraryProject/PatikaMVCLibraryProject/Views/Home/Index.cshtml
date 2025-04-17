@@ -1,0 +1,39 @@
+﻿<div class="text-center py-5 d-flex justify-content-center align-items-center">
+    <div class="content-wrapper">
+        <h1 class="display-3 fw-bold text-primary">Welcome Library Management System</h1>
+        <p class="lead text-secondary">Manage and explore a vast collection of books and authors effortlessly.</p>
+
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a class="btn btn-primary btn-lg px-4 py-2 shadow-sm rounded-pill" asp-area="" asp-controller="Book" asp-action="List">
+                📚 Browse Books
+            </a>
+            <a class="btn btn-secondary btn-lg px-4 py-2 shadow-sm rounded-pill" asp-area="" asp-controller="Author" asp-action="List">
+                ✍️ View Authors
+            </a>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-primary">Discover Books</h4>
+                            <p class="text-muted">Explore our collection of books across various genres.</p>
+                            <a class="btn btn-outline-primary" asp-area="" asp-controller="Book" asp-action="List">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-secondary">Meet the Authors</h4>
+                            <p class="text-muted">Learn more about authors and their works.</p>
+                            <a class="btn btn-outline-secondary" asp-area="" asp-controller="Author" asp-action="List">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
